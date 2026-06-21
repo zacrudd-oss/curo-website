@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <footer className="bg-dark-muted border-t border-dark-border">
-      <div className="max-w-6xl mx-auto px-6 py-16">
-        <div className="grid md:grid-cols-3 gap-12">
+      <div className="max-w-6xl mx-auto px-6 py-10 md:py-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">
           {/* Brand */}
           <div>
             <h3 className="font-heading text-2xl font-bold text-gold mb-4">
@@ -63,7 +63,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-16 pt-8 border-t border-dark-border flex flex-col sm:flex-row justify-between items-center gap-4">
+        <div className="mt-10 md:mt-16 pt-8 border-t border-dark-border flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left">
           <p className="text-white/30 text-xs">
             &copy; {new Date().getFullYear()} CURO Bespoke Investments. All rights reserved.
           </p>

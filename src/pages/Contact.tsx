@@ -20,12 +20,12 @@ export default function Contact() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-32 pb-20 bg-dark">
+      <section className="pt-28 md:pt-32 pb-16 md:pb-20 bg-dark">
         <div className="max-w-4xl mx-auto px-6">
           <p className="animate-fade-in-up text-gold text-sm uppercase tracking-[0.3em] mb-4">
             Contact Us
           </p>
-          <h1 className="animate-fade-in-up animate-delay-100 font-heading text-4xl md:text-5xl font-bold leading-tight mb-8">
+          <h1 className="animate-fade-in-up animate-delay-100 font-heading text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-6 md:mb-8">
             Let's Talk Property
           </h1>
           <p className="animate-fade-in-up animate-delay-200 text-white/60 text-lg leading-relaxed max-w-2xl">
@@ -38,7 +38,7 @@ export default function Contact() {
       {/* Form + Info */}
       <section className="py-24 bg-dark-muted">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="grid lg:grid-cols-5 gap-16">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-16">
             {/* Form */}
             <ScrollReveal className="lg:col-span-3">
               {submitted ? (

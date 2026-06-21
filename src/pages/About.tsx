@@ -5,12 +5,12 @@ export default function About() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-32 pb-20 bg-dark">
+      <section className="pt-28 md:pt-32 pb-16 md:pb-20 bg-dark">
         <div className="max-w-4xl mx-auto px-6">
           <p className="animate-fade-in-up text-gold text-sm uppercase tracking-[0.3em] mb-4">
             About CURO
           </p>
-          <h1 className="animate-fade-in-up animate-delay-100 font-heading text-4xl md:text-5xl font-bold leading-tight mb-8">
+          <h1 className="animate-fade-in-up animate-delay-100 font-heading text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-6 md:mb-8">
             Built on Precision.
             <br />
             Driven by Care.
@@ -66,7 +66,7 @@ export default function About() {
             </h2>
           </ScrollReveal>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
             {[
               {
                 title: "Precision Over Volume",

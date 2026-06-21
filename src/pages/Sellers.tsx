@@ -20,13 +20,13 @@ export default function Sellers() {
   return (
     <>
       {/* Hero */}
-      <section className="relative pt-32 pb-20 bg-dark overflow-hidden">
-        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-gold/[0.03] blur-[120px]" />
+      <section className="relative pt-28 md:pt-32 pb-16 md:pb-20 bg-dark overflow-hidden">
+        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] md:w-[500px] h-[300px] md:h-[500px] rounded-full bg-gold/[0.03] blur-[120px]" />
         <div className="relative max-w-4xl mx-auto px-6">
           <p className="animate-fade-in-up text-gold text-sm uppercase tracking-[0.3em] mb-4">
             Sell Your Property
           </p>
-          <h1 className="animate-fade-in-up animate-delay-100 font-heading text-4xl md:text-5xl font-bold leading-tight mb-8">
+          <h1 className="animate-fade-in-up animate-delay-100 font-heading text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-6 md:mb-8">
             Need a Fast,
             <br />
             <span className="text-gold">Cash Sale?</span>
@@ -51,7 +51,7 @@ export default function Sellers() {
             </h2>
           </ScrollReveal>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             {[
               {
                 title: "Cash Buyers Ready",
@@ -82,8 +82,8 @@ export default function Sellers() {
       </section>
 
       {/* Register Interest Form + Contact */}
-      <section className="py-24 bg-dark">
-        <div className="absolute left-0 right-0 gold-line" />
+      <section className="relative py-16 md:py-24 bg-dark overflow-hidden">
+        <div className="absolute left-0 right-0 top-0 gold-line" />
         <div className="max-w-6xl mx-auto px-6">
           <ScrollReveal className="text-center mb-14">
             <p className="text-gold text-sm uppercase tracking-[0.3em] mb-4">
@@ -98,7 +98,7 @@ export default function Sellers() {
             </p>
           </ScrollReveal>
 
-          <div className="grid lg:grid-cols-5 gap-16">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-16">
             {/* Form */}
             <ScrollReveal className="lg:col-span-3">
               {submitted ? (

@@ -108,7 +108,7 @@ function FloatingHouse({ item }: { item: HouseItem }) {
 export default function HouseBackdrop() {
   return (
     <div
-      className="absolute inset-0 overflow-hidden pointer-events-none"
+      className="absolute inset-0 overflow-hidden pointer-events-none hidden md:block"
       style={{ zIndex: 0 }}
     >
       {houseItems.map((item) => (

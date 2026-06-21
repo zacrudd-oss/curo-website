@@ -12,25 +12,25 @@ export default function Home() {
           <p className="animate-fade-in-up text-gold text-sm uppercase tracking-[0.3em] mb-6">
             CURO Bespoke Investments
           </p>
-          <h1 className="animate-fade-in-up animate-delay-100 font-heading text-5xl md:text-7xl font-bold leading-tight mb-8">
+          <h1 className="animate-fade-in-up animate-delay-100 font-heading text-3xl sm:text-5xl md:text-7xl font-bold leading-tight mb-6 md:mb-8">
             Your Deals.
             <br />
             <span className="text-gold">Done Properly.</span>
           </h1>
-          <p className="animate-fade-in-up animate-delay-200 text-white/60 text-lg md:text-xl max-w-2xl mx-auto mb-12 leading-relaxed">
+          <p className="animate-fade-in-up animate-delay-200 text-white/60 text-base md:text-xl max-w-2xl mx-auto mb-10 md:mb-12 leading-relaxed">
             Precision-sourced, below-market-value property deals for serious
             investors across Warrington and the North West.
           </p>
-          <div className="animate-fade-in-up animate-delay-300 flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="animate-fade-in-up animate-delay-300 flex flex-col sm:flex-row gap-4 justify-center px-4 sm:px-0">
             <Link
               to="/contact"
-              className="px-8 py-4 bg-gold text-dark font-semibold uppercase tracking-wider text-sm hover:bg-gold-light transition-colors duration-300"
+              className="px-6 sm:px-8 py-4 bg-gold text-dark font-semibold uppercase tracking-wider text-sm hover:bg-gold-light transition-colors duration-300 text-center"
             >
               Source My Next Deal
             </Link>
             <Link
               to="/services"
-              className="px-8 py-4 border border-white/20 text-white font-medium uppercase tracking-wider text-sm hover:border-gold hover:text-gold transition-colors duration-300"
+              className="px-6 sm:px-8 py-4 border border-white/20 text-white font-medium uppercase tracking-wider text-sm hover:border-gold hover:text-gold transition-colors duration-300 text-center"
             >
               How It Works
             </Link>
@@ -39,9 +39,9 @@ export default function Home() {
       </section>
 
       {/* Value Props */}
-      <section className="py-24 bg-dark-muted">
+      <section className="py-16 md:py-24 bg-dark-muted">
         <div className="max-w-6xl mx-auto px-6">
-          <ScrollReveal className="text-center mb-16">
+          <ScrollReveal className="text-center mb-10 md:mb-16">
             <p className="text-gold text-sm uppercase tracking-[0.3em] mb-4">
               Why CURO
             </p>
@@ -50,7 +50,7 @@ export default function Home() {
             </h2>
           </ScrollReveal>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             {[
               {
                 title: "Below Market Value",
