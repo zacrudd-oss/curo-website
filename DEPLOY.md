@@ -1,41 +1,41 @@
-# Deployment Guide
+# Deployment Guide — Azure Static Web Apps
 
-## 1. Clone the repo
-```
-git clone https://github.com/zacrudd-oss/curo-website.git
-cd curo-website
-```
+## 1. Create Static Web App
+- Azure Portal → Create Resource → Static Web App
+- **Source:** GitHub
+- **Repo:** `zacrudd-oss/curo-website`
+- **Branch:** `main`
+- **Build preset:** Vite
+- **App location:** `/`
+- **Output location:** `dist`
 
-## 2. Install dependencies
-```
-npm install
-```
-
-## 3. Deploy to Vercel or Netlify
+## 2. Build Settings (auto-detected, verify these)
 - **Build command:** `npm run build`
 - **Output directory:** `dist`
-- **Framework preset:** Vite
 - **Node version:** 20+
 
-## 4. SPA Routing
-All paths must redirect to `index.html`. Vercel and Netlify handle this automatically.  
-If not auto-detected, add one of these:
-
-**Vercel** — create `vercel.json` in root:
+## 3. SPA Routing
+Create `staticwebapp.config.json` in the repo root:
 ```json
-{ "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }] }
+{
+  "navigationFallback": {
+    "rewrite": "/index.html"
+  }
+}
 ```
 
-**Netlify** — create `public/_redirects`:
-```
-/* /index.html 200
-```
+## 4. Custom Domain (`curo.ltd`)
+- In Azure Portal → Static Web App → Custom Domains → Add
+- Add a CNAME record with your domain registrar pointing to the Azure-provided URL
+- SSL certificate is provisioned automatically
 
-## 5. Domain
-Point `curo.ltd` to the hosting platform. Zac will update DNS once deployment is confirmed.
-
-## 6. Environment Variables
+## 5. Environment Variables
 None. No backend, no secrets.
+
+## 6. After Deploy
+- Verify all 5 pages load correctly
+- Test contact form submissions (Formspree)
+- Confirm HTTPS is active on `curo.ltd`
 
 ---
 
