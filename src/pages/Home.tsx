@@ -18,7 +18,7 @@ export default function Home() {
             <span className="text-gold">Done Properly.</span>
           </h1>
           <p className="animate-fade-in-up animate-delay-200 text-white/60 text-base md:text-xl max-w-2xl mx-auto mb-10 md:mb-12 leading-relaxed">
-            Precision-sourced, below-market-value property deals for serious
+            Precision sourced, below market value property deals for serious
             investors across Warrington and the North West.
           </p>
           <div className="animate-fade-in-up animate-delay-300 flex flex-col sm:flex-row gap-4 justify-center px-4 sm:px-0">
